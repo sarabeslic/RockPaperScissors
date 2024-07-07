@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK PAPER SCISSORS </title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>ROCK PAPER SCISSORS</h1>
+    </header>
+<!--Intro of the game that will disapear after pressing the start button-->
+    <p id="paragraph1" class="intro">This is a Rock, Paper, Scissors game.</p>
+    <p id="paragraph2" class="intro">Who reaches 3 points first, wins the match.</p>
+    <p id="paragraph3" class="intro">Click the button below to start playing!</p>
+
+<!--making a start button with a function for hidding the into and showing the rest of the code fo the game by changing 
+the display to "block".-->
+    <button id="button-83" class="button-83" onclick="startGame()">Start Game</button>
+    <div class="game-container" style="display: none;">
+
+    
+<!--the choices for the user, under a class=choices. 2 subclasses so that it's easier to arrange the buttons in a triangle shape-->
+<!--choice1 for the top, and class row for the 2 buttons below-->
+        <section class="choices">
+            <div class="choice1" id="r">
+                <img src="rock.png" alt="rock">
+            </div>
+            <div class="row">  
+                <div id="p">
+                    <img src="paper.png" alt="paper">
+                </div>
+                <div class="Resultline">
+                <p id="result_p"></p>
+                </div>
+                <div id="s">
+                    <img src="scissors.png" alt="scissors">
+                </div>
+            </div>  
+        </section>
+<!--2 messages under the triangle buttons. First one is fixed and not changable and the second one will be shown under the 
+first one when the match is over. And depending on the winner we will have different message shown.-->
+        
+        <p id="move-message">Choose your cute "weapon".</p>
+        <p id="winner"></p>
+
+<!--the score of the game. For styling and for changing the values on the board each one has it's own class and id. Necesarry for
+manipulating later on.-->
+        
+        <footer class="board">
+            <div id="user-label" class="badge">User</div>
+            <div id="computer-label" class="badge">Computer</div>
+            <span id="user-score"> 0 </span>:<span id="computer-score"> 0 </span>
+        </footer>
+        <script src="./script.js"></script> <!--linking the Js file-->
+    </div>
+</body>
+</html>

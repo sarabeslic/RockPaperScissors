@@ -1,0 +1,160 @@
+body{
+    background:#08ff6b ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    position:relative;
+}
+
+header {
+    background-color: white;
+    height:80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+h1{
+    align-items: center;
+}
+/*2 pictures under the rock */
+.row{ 
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+
+/*rock picture on the top*/
+.choice1{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom:40 px;
+}
+/*positioning the result line in the middle of the pictures after every round*/
+.Resultline  {
+    padding: 60px 60px 0px;
+    margin: 0;/* Remove default margin for the paragraph */
+    font-size: 30px;
+    max-width: 350px;
+ } 
+
+/* styling the images using the class choices and defining the smooth shape of the images, shadow and the transiton for our mouse hover.*/
+.choices img{
+    width: 170px;
+    border-radius:40%;
+    box-shadow: rgba(0,0, 0, 40%) 12px 12px 12px;
+    background: white;
+    padding:15px;
+    height:170px;
+    transition:all 0.5s ease;
+}
+
+/*fixed message under the images*/
+#move-message{
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    font-weight: bold;
+    color:rgb(228, 104, 174);
+    border-color: black;
+}
+
+#winner{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+    font-weight: bold;
+    color:black;
+    background:white;
+    height:60px;
+}
+
+/*styling of the score board, including the radious, fond size, color and itd.*/
+.board{
+    border:4px solid black;
+    background-color: white;
+    border-radius: 15px;
+    width: 180px;
+    height: 70px;
+    position:absolute;
+    top: 80px; 
+    margin: 40px;
+    color: rgb(255, 86, 182) ; 
+    font-size: 50px;
+    text-align: center;
+    
+}
+/* individual styling for the player and the computer*/
+#user-label{
+    position:absolute;
+    left:0;
+    top:80px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#computer-label{
+    position:absolute;
+    right:0;
+    top: 80px;
+    font-size: 25px;
+    font-weight: bold;
+}
+/*changes the background color when the mouse is over the image*/
+.choices img:hover {
+    background-color: pink; 
+}
+
+/* style for the intro text */
+.intro{
+    text-align: left;
+    margin-left:37vw;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
+    margin-block-start: 0.5em;  /* adjasted space between the paragraphs*/
+    margin-block-end: 0.5em;
+}
+
+
+/* CSS code for the button 83, with some small changes such as position, text color and size */
+.button-83 {
+  appearance: button;
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid #e5e7eb;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  color: #dc198e;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 120%;
+  font-weight: 800;
+  line-height: 25px;
+  margin: 150px 630px;
+  outline: 4px solid transparent;
+  padding: 1.5rem 5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+}
+
+.button-83:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+  transform: translateY(0.125rem);
+}
+
+.button-83:focus {
+  box-shadow: #dc198e 0 0 0 4px, -6px 8px 10px rgba(81,41,10,0.1), 0px 2px 2px rgba(81,41,10,0.2);
+}
+
+
